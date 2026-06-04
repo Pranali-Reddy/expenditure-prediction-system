@@ -64,8 +64,8 @@ def add_amount(request, goal_id):
 
 def send_congratulatory_email(email, goal):
     subject = 'Congratulations on achieving your goal!'
-    message = f'Dear User,\n\nCongratulations on achieving your goal "{goal.name}". You have successfully saved {goal.amount_to_save}.\n\nKeep up the good work!\n\nBest regards,\nThe Goal Tracker Team, \nExpenseWise Team'
-    send_mail(subject, message, 'hemantshirsath24@gmail.com', [email])
+    message = f'Dear User,\n\nCongratulations on achieving your goal "{goal.name}". You have successfully saved {goal.amount_to_save}.\n\nKeep up the good work!\n\nBest regards,\nThe Goal Tracker Team, \nSmartSpend AI Team'
+    send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [email])
 
 @login_required(login_url='/authentication/login')
 def delete_goal(request, goal_id):

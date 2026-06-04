@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib.auth.models import User
@@ -74,7 +75,7 @@ class RegistrationView(View):
                         email = EmailMessage(
                             email_subject,
                             email_body,
-                            'hemantshirsath24@gmail.com',
+                            settings.DEFAULT_FROM_EMAIL,
                             [email],
                         )
                         email.send(fail_silently=False)
