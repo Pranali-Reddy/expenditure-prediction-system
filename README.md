@@ -1,5 +1,9 @@
 # Expenditure Prediction System
 
+## System Preview
+![Dashboard](static/img/forecast_plot.png)
+*Intelligent financial forecasting and expense tracking interface.*
+
 ## Overview
 The **Expenditure Prediction System** is a data-driven personal finance application built with Django. It focuses on helping users manage their daily finances by providing automated categorization and predictive insights into future spending patterns using Machine Learning.
 
