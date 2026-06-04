@@ -14,7 +14,7 @@ SmartSpend AI is a modern personal finance management application built with Dja
 
 1. **Clone the Project**:
    ```bash
-   git clone https://github.com/Pranali-Reddy/expenditure-prediction-system.git
+   git clone https://github.com/Pranali-Reddy/SmartSpendAI.git
    ```
 
 2. **Environment Setup**:
